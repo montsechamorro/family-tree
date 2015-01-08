@@ -108,6 +108,13 @@ public class Person
         }
         return hasChildrens;
     }
+    /**
+     * método que devuelve un entero, indicando el numero de hijos que tiene la persona
+     */
+    public int getNumberOfChildren()
+    {
+        return children.size();
+    }
         
         
 }
