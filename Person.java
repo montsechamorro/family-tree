@@ -25,7 +25,10 @@ public class Person
     public Person(String name, int age)
     {
         this.name = name;
-        this.age = age;       
+        this.age = age;
+        father = null;
+        mother = null;
+        children = new ArrayList<Person>();
     }
     /**
      * método que muestra por pantalla el nombre y edad de la persona
@@ -34,6 +37,21 @@ public class Person
     {
         System.out.println("El nombre de la persona es " + name + " y tiene " + age + " años");
     }
+    /**
+     * método que fija la madre de la persona
+     */
+    public void setMother(Person mother)
+    {
+        this.mother = mother;
+    }
+    /**
+     * método que fija el padre de la persona
+     */
+    public void setFather(Person father)
+    {
+        this.father = father;
+    }
+        
 }
         
     
