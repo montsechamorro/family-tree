@@ -51,6 +51,14 @@ public class Person
     {
         this.father = father;
     }
+    /**
+     * Método que añade un hijo a la persona
+     */
+    public void addChild(Person child)
+    {
+        children.add(child);
+    }
+        
         
 }
         
