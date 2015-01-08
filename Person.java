@@ -21,6 +21,11 @@ public class Person
         this.name = name;
         this.age = age;       
     }
-
-    
+    public void showData()
+    {
+        System.out.println("El nombre de la persona es " + name + " y tiene " + age + " años");
+    }
 }
+        
+    
+
