@@ -35,7 +35,8 @@ public class Person
      */
     public void showData()
     {
-        System.out.println("El nombre de la persona es " + name + " y tiene " + age + " años");
+        System.out.println("Nombre: " + name); 
+        System.out.println("Edad: " + age);
     }
     /**
      * método que fija la madre de la persona
@@ -57,6 +58,24 @@ public class Person
     public void addChild(Person child)
     {
         children.add(child);
+    }
+    /**
+     * Método que muestra por pantalla los datos del padre y de la madre de la persona
+     */
+    public void showParentsData()
+    {
+        //si tiene madre almacenada, imprime su informacion 
+        if (mother != null)
+        {
+            System.out.println("Madre: ");
+            mother.showData();
+        }
+        //si tiene padre almacenado, imprime su información
+        if (father != null)
+        {
+            System.out.println("Padre: ");
+            father.showData();
+        }
     }
         
         
