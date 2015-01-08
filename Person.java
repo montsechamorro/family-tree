@@ -95,6 +95,19 @@ public class Person
             }
         }
     }
+    /**
+     * método que devuelve un boolean indicando si una persona tiene hijos o no
+     */
+    public boolean hasChildrens()
+    {
+        boolean hasChildrens = false;
+        //si hay algun hijo en la colección, devolverá true
+        if (children.size() > 0)
+        {
+            hasChildrens = true;
+        }
+        return hasChildrens;
+    }
         
         
 }
