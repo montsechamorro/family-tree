@@ -77,6 +77,24 @@ public class Person
             father.showData();
         }
     }
+    /**
+     * método que muestra por pantalla los datos de los hijos de la persona
+     */
+    public void showChildrenData()
+    {
+        if (children.size() == 0)
+        {
+            System.out.println(name + " no tiene descendientes");
+        }
+        else
+        {
+            System.out.println("Los descendientes de " + name + " son:");
+            for (Person child : children)
+            {
+                child.showData();
+            }
+        }
+    }
         
         
 }
