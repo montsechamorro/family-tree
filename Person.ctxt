@@ -4,4 +4,5 @@ comment0.target=Person(java.lang.String,\ int)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Person\r\n
 comment1.params=
 comment1.target=void\ showData()
+comment1.text=\r\n\ m\u00E9todo\ que\ muestra\ por\ pantalla\ el\ nombre\ y\ edad\ de\ la\ persona\r\n
 numComments=2

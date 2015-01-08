@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Person here.
  * 
@@ -11,6 +11,12 @@ public class Person
     private String name;
     // atributo que guarda la edad de la persona
     private int age;
+    //padre de esta persona
+    private Person father;
+    //madre de esta persona
+    private Person mother;
+    //hijos de esta persona, si es que tiene
+    private ArrayList<Person> children;
   
 
     /**
@@ -21,6 +27,9 @@ public class Person
         this.name = name;
         this.age = age;       
     }
+    /**
+     * método que muestra por pantalla el nombre y edad de la persona
+     */
     public void showData()
     {
         System.out.println("El nombre de la persona es " + name + " y tiene " + age + " años");
